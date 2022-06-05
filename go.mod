@@ -1,3 +1,3 @@
-module somename
+module solution
 
 go 1.17
