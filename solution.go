@@ -1,10 +1,16 @@
-package solution
+package square
 
 import (
 	"math"
 )
 
-func CalcSquare(sideLen float64, sidesNum int64) float64 {
+type NewType int
+
+const SidesSquare NewType = 4
+const SidesTriangle NewType = 3
+const SidesCircle NewType = 0
+
+func CalcSquare(sideLen float64, sidesNum NewType) float64 {
 	switch sidesNum {
 	case 0:
 		return math.Pi * (sideLen * sideLen)
